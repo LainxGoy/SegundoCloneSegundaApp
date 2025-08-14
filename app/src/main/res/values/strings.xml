@@ -16,4 +16,9 @@
     <string name="login_success">¡Bienvenido, %1$s!</string>
     <string name="session_remembered">Sesión recordada</string>
     <string name="login_failed">Usuario o contraseña incorrectos</string>
+    <string name="list_view_title">Lista de Usuarios</string>
+    <string name="list_view_button">Ver Lista de Usuarios</string>
+    <string name="user_selected">Seleccionaste: %1$s %2$s</string>
+    <item name="tvCorreo" type="id" />
+    <item name="tvNombre" type="id" />
 </resources>

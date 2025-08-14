@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     private TextInputLayout usernameLayout;
     private TextInputLayout passwordLayout;
     private MaterialButton loginButton;
+    private MaterialButton listViewButton;
     private TextView registerText;
 
     @Override
@@ -46,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
         usernameLayout = findViewById(R.id.usernameLayout);
         passwordLayout = findViewById(R.id.passwordLayout);
         loginButton = findViewById(R.id.loginButton);
+        listViewButton = findViewById(R.id.listViewButton);
         registerText = findViewById(R.id.registerText);
     }
 
@@ -56,6 +58,15 @@ public class MainActivity extends AppCompatActivity {
                 performLogin();
             }
         });
+        
+        listViewButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ListViewActivity.class);
+                startActivity(intent);
+            }
+        });
+        
         usernameInput.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
